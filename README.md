@@ -1,3 +1,3 @@
-# Js Sessions 3
+# Js Sessions 6
 
-Functions
+Errors and debugging
