@@ -19,25 +19,72 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-  //Redeclaring a function
-  // function a() { console.log(1); }
-  // var a1 = a;
-  // a1();
-  // function a() { console.log(2); }
-  // a();
-
-
-  //Anonymous self invoking
-  // (function(msg){
-  //   alert(msg);
-  // })('Hey There');
-
-  // function functionName1() {
-  //   function functionName2() {
-  //     console.log("hello");
-  //   }
-  //   functionName2();
+  // try {
+  //   throw "this is not valid";
   // }
+  // catch(err) {
+  //   document.getElementById("result").innerHTML = err.message;
+  // }
+
+
+  // function throwFunction() {
+  //   var message, x;
+  //   message = document.getElementById("message");
+  //   message.innerHTML = "";
+  //   x = document.getElementById("demo").value;
+  //   try {
+  //     if(x == "") throw "empty";
+  //     if(isNaN(x)) throw "not a number";
+  //     x = Number(x);
+  //     if(x < 5) throw "too low";
+  //     if(x > 10) throw "too high";
+  //   }
+  //   catch(err) {
+  //     message.innerHTML = "Input is " + err;
+  //   }
+  // }
+  //
+  // throwFunction();
+
+  // function pattern() {
+  //   // console.log("function called");
+  //   var rows = 5;
+  //
+  //   for (var i = 1; i <= rows; i++) {
+  //     var pTag = document.createElement("p");
+  //
+  //     for (var j = 1; j <= rows; j++) {
+  //       var char = document.createTextNode("* ");
+  //       pTag.appendChild(char);
+  //       document.getElementById("result").appendChild(pTag);
+  //     }
+  //   }
+  //
+  // }
+
+
+  function pattern(rows, columns, val) {
+
+    for (var i = 1; i <= rows; i++) {
+
+      console.log(i);
+
+      var pTag = document.createElement("p");
+
+      for (var j = 1; j <= columns; j++) {
+
+      var char = document.createTextNode(val);
+      pTag.appendChild(char);
+      document.getElementById("result").appendChild(pTag);
+
+      }
+
+    }
+
+  }
+
+
+  pattern(2,4,"D");
   </script>
 </body>
 </html>

@@ -23,7 +23,7 @@ require("normalize.css");
 const theme = createTheme({
   primary: "white",
   secondary: "#1F2022",
-  tertiary: "#ffbf60",
+  tertiary: "#ff6f60",
   quarternary: "#333"
 }, {
   primary: "Montserrat",
@@ -39,58 +39,54 @@ export default class Presentation extends React.Component {
             Javascript Course
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            Session 3 - 10th April, 2018
+            Session 6 - 19th April, 2018
           </Text>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Session Target</Heading>
-          <Heading size={5} textColor="secondary">Recap</Heading>
-          <Heading size={5} textColor="secondary">Functions</Heading>
+          <Heading size={5} textColor="secondary">Recap/Logic building</Heading>
+          <Heading size={5} textColor="secondary">Errors/Handling</Heading>
+          <Heading size={5} textColor="secondary">Debugging</Heading>
           <Heading size={5} textColor="secondary">Q&A</Heading>
-          <Heading size={5} textColor="secondary">Assignment Questions</Heading>
+          <Heading size={5} textColor="secondary">Assignment Questions -- issbar sachi milega</Heading>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps fit>Recap:</Heading>
           <List>
-            <ListItem>ternary operator</ListItem>
-            <ListItem>difference between switch and if-else</ListItem>
+            <ListItem>Loops & events</ListItem>
+            <ListItem>Arrays/Objects</ListItem>
+            <ListItem>Functions</ListItem>
+            <ListItem>Logic Building</ListItem>
           </List>
         </Slide>
 
 
         <Slide transition={["zoom"]} bgColor="tertiary">
-          <Heading size={3} textColor="primary" caps fit>Functions</Heading>
-          <Text margin="10px 0 0" textColor="secondary" size={1} fit bold>
-            A JavaScript {"function"} is a block of code designed to perform a particular task.
-          </Text>
+          <Heading size={3} textColor="primary" caps fit>Errors</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <List>
-            <ListItem>Predefined {"functions"} eg: {"alert()"} </ListItem>
-            <ListItem>{"Function"} Definition</ListItem>
-            <ListItem>Calling a {"Function"}</ListItem>
-            <ListItem>{"Function"} Parameters</ListItem>
-            <ListItem>The return Statement</ListItem>
+            <ListItem>try</ListItem>
+            <ListItem>catch</ListItem>
+            <ListItem>throw</ListItem>
+            <ListItem>finally</ListItem>
           </List>
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={3} textColor="secondary" caps fit>{"Function"} Definition:</Heading>
-          <List>
-            <ListItem>Using {"Function"} keyword</ListItem>
-            <ListItem>{"Function"} {"constructor"}</ListItem>
-            <ListItem>Anonymous functions</ListItem>
-            <ListItem>{"Function"} Expressions</ListItem>
-            <ListItem>Arrow {"function"} expressions</ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={3} textColor="secondary" caps fit>Calling a {"Function"}:</Heading>
 
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={3} textColor="primary" caps fit>Debugging</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={3} textColor="secondary" caps fit>The context {"'this'"} when the {"function"} is invoked</Heading>
+          <Heading size={3} textColor="secondary" caps fit>Ways to debug:</Heading>
+          <List>
+            <ListItem>check your code</ListItem>
+            <ListItem>console.log</ListItem>
+            <ListItem>code debuggers</ListItem>
+            <ListItem>Browser debuggers</ListItem>
+          </List>
         </Slide>
 
 
